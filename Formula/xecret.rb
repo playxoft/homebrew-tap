@@ -5,21 +5,21 @@
 class Xecret < Formula
   desc "Open-source, developer-first secret management"
   homepage "https://xecret.playxoft.com"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/playxoft/xecret/releases/download/v0.1.2/xecret_0.1.2_darwin_amd64.tar.gz"
-      sha256 "139c58f0786e0894f3e80aa236c60b620217361d6b159a1621b3a0ab85cc3023"
+      url "https://github.com/playxoft/xecret/releases/download/v0.2.0/xecret_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1feab06db98e069816aeb1abdeff67e4e1a15a2e0cbc88af70018877c9cd3a30"
 
       define_method(:install) do
         bin.install "xecret"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/playxoft/xecret/releases/download/v0.1.2/xecret_0.1.2_darwin_arm64.tar.gz"
-      sha256 "e0d1d75e76ea7f6db838ea9bc9e25461b774c5902423092f981c657986fd0491"
+      url "https://github.com/playxoft/xecret/releases/download/v0.2.0/xecret_0.2.0_darwin_arm64.tar.gz"
+      sha256 "3c2fccbb15f97d1314211cb6795a2c52f04f2b76616f36423a7740d898586f4a"
 
       define_method(:install) do
         bin.install "xecret"
@@ -29,15 +29,15 @@ class Xecret < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/playxoft/xecret/releases/download/v0.1.2/xecret_0.1.2_linux_amd64.tar.gz"
-      sha256 "6678a16441ef97d2a36b7dd7e552ba587836028d3d334f803384b76f177f2913"
+      url "https://github.com/playxoft/xecret/releases/download/v0.2.0/xecret_0.2.0_linux_amd64.tar.gz"
+      sha256 "71ce1f870359366ad30695ea8d0b5c06155d990b8ee9222a182f24fcd8078564"
       define_method(:install) do
         bin.install "xecret"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/playxoft/xecret/releases/download/v0.1.2/xecret_0.1.2_linux_arm64.tar.gz"
-      sha256 "093a407ae3666e889af47d4f7041962928a71e6c9d16b3ad34c59e062737a8ad"
+      url "https://github.com/playxoft/xecret/releases/download/v0.2.0/xecret_0.2.0_linux_arm64.tar.gz"
+      sha256 "1b9fbc2624be5f7705abb3640493ade0053706dcf44692ccf2cd415525be97b2"
       define_method(:install) do
         bin.install "xecret"
       end
